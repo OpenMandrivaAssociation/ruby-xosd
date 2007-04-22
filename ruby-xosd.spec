@@ -1,7 +1,7 @@
 %define rname xosd
 %define name ruby-%{rname}
 %define version 1.1.0
-%define release 2mdk
+%define release %mkrel
 
 Summary: Ruby bindings for xosd
 Name: %{name}
@@ -10,12 +10,10 @@ Release: %{release}
 URL: http://djur.desperance.net/ruby/
 Source0: %{name}-%{version}.tar.bz2
 License: Historical Permission Notice and Disclaimer
-Group: Development/Other
+Group: Development/Ruby
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby 
 BuildRequires: ruby-devel xosd-devel
-
-%define ruby_archdir %(ruby -rrbconfig -e 'puts Config::CONFIG["sitearchdir"]')
 
 %description
 ruby-xosd is a simple binding to the xosd library for the Ruby programming 
@@ -44,6 +42,6 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%{ruby_archdir}/*.so
+%{ruby_sitearchdir}/*.so
 %doc COPYING TODO
 
