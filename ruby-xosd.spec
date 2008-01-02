@@ -11,6 +11,7 @@ URL: http://djur.desperance.net/ruby/
 Source0: %{name}-%{version}.tar.bz2
 License: Historical Permission Notice and Disclaimer
 Group: Development/Ruby
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby 
 BuildRequires: ruby-devel xosd-devel
 
