@@ -1,7 +1,7 @@
 %define rname xosd
 %define name ruby-%{rname}
 %define version 1.1.0
-%define release %mkrel 5
+%define release %mkrel 6
 
 Summary: Ruby bindings for xosd
 Name: %{name}
