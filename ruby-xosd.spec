@@ -7,7 +7,7 @@ Summary: Ruby bindings for xosd
 Name: %{name}
 Version: %{version}
 Release: %{release}
-URL: http://djur.desperance.net/ruby/
+URL: https://djur.desperance.net/ruby/
 Source0: %{name}-%{version}.tar.bz2
 License: Historical Permission Notice and Disclaimer
 Group: Development/Ruby
