@@ -13,6 +13,7 @@ License: Historical Permission Notice and Disclaimer
 Group: Development/Ruby
 BuildRoot: %{_tmppath}/%{name}-buildroot
 Requires: ruby 
+BuildRequires:	make
 BuildRequires: ruby-devel xosd-devel
 
 %description
